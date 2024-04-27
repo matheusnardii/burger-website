@@ -1,0 +1,264 @@
+.modalOverlay {
+    position: fixed;
+  
+    inset: 0;
+    
+    width: 100%;
+    height: 100vh;
+  
+    background-color: rgb(0, 0, 0, 0.25);
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  
+
+    .modalBox {
+        width: 30.25rem;
+        height: 25.5rem;
+        position: relative;
+        border-radius: 0.5rem;
+        background-color: #FFF;                      
+    
+    }
+
+
+    .modal__header{
+        width: 30.25rem;
+        height: 3.5625rem;
+        background: var(--color-primary);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 0.5rem 0.5rem 0rem 0rem;
+
+        h2{
+            color: var(--gray-0);
+
+            font-family: var(--font-primary);
+            font-size: var(--title-three);
+            font-weight: var(--bold);
+            line-height: 1.75rem;
+            padding: 0.88rem 0 0.94rem 0.88rem;
+        }
+
+        button{
+            border: none;
+            background-color: var(--color-primary);
+            padding-right: 1rem;
+            cursor: pointer;
+
+        }
+
+        .close {
+            color: rgba(255, 255, 255, 0.5);
+        }
+        
+    }
+
+    .modal__products{
+        width: 30.25rem;
+        height: 14rem;
+        
+        flex-shrink: 0;
+
+        border-radius: 0rem 0rem 0.5rem 0.5rem;
+        background: #FFF;
+
+        overflow-y: auto;
+    }
+
+
+    .footer__containner{
+        align-items: center;
+        width: 28.375rem;
+        height: 7.5625rem;
+
+        border-top: 5px solid var(--gray-100);
+        padding-top: 0.5rem;
+        margin: 0 auto;
+        margin-top: 1rem;
+
+        button{
+            display: flex;
+            width: 100%;
+            height: 3.75rem;
+            padding: 0 1.25rem;
+            justify-content: center;
+            align-items: center;
+            gap: 0.625rem;
+            flex-shrink: 0;
+            border: none;
+            border-radius: 0.5rem;
+            background-color: #BDBDBD;
+            margin-bottom: 1rem;
+
+            cursor: pointer;
+
+            color: #FFF;
+            font-family: var(--font-primary);
+            font-size: var(--paragraph-one);
+            font-weight: var(--semibold);
+        }
+    }
+
+    .total__box{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #FFF;
+        padding-bottom: 0.5rem;
+       
+
+        p{
+            color: var(--gray-600);
+            font-family: var(--font-primary);
+            font-size: var(--paragraph-two);
+            font-weight: var(--semibold);
+            line-height: 1.5rem;
+        }
+
+        span{
+            color: var(--gray-300);
+            text-align: right;
+            font-family: var(--font-primary);
+            font-size: var(--paragraph-two);
+            font-weight: var(--semibold);
+            line-height: 1.5rem;
+        }
+    }
+}    
+
+
+
+@media (min-width: 300px) and (max-width: 426px) {
+    .modalOverlay {
+        position: fixed;
+      
+        inset: 0;
+        
+        width: 100%;
+        height: 100vh;
+      
+        background-color: rgb(0, 0, 0, 0.25);
+      
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+      
+    
+        .modalBox {
+            width: 24.8125rem;
+            height: 25.5rem;
+            position: relative;
+            border-radius: 0.5rem;
+            background-color: #FFF;                 
+        
+        }
+    
+    
+        .modal__header{
+            width: 24.8125rem;
+            height: 3.5625rem;
+            background: var(--color-primary);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-radius: 0.5rem 0.5rem 0rem 0rem;
+    
+            h2{
+                color: var(--gray-0);
+    
+                font-family: var(--font-primary);
+                font-size: var(--title-three);
+                font-weight: var(--bold);
+                line-height: 1.75rem;
+                padding: 0.88rem 0 0.94rem 0.88rem;
+            }
+    
+            button{
+                border: none;
+                background-color: var(--color-primary);
+                padding-right: 1rem;
+    
+            }
+    
+            .close {
+                color: rgba(255, 255, 255, 0.5);
+            }
+            
+        }
+    
+        .modal__products{
+            width: 24.8125rem;
+            height: 14rem;
+            
+            flex-shrink: 0;
+    
+            border-radius: 0rem 0rem 0.5rem 0.5rem;
+            background: #FFF;
+    
+            overflow-y: auto;
+        }
+    
+    
+        .footer__containner{
+            align-items: center;
+            width: 23rem;
+            height: 7.5625rem;
+    
+            border-top: 5px solid var(--gray-100);
+            margin: 0 auto;
+            margin-top: 1rem;
+
+    
+            button{
+                display: flex;
+                width: 100%;
+                height: 3.75rem;
+                padding: 0 1.25rem;
+                justify-content: center;
+                align-items: center;
+                gap: 0.625rem;
+                flex-shrink: 0;
+                border: none;
+                border-radius: 0.5rem;
+                background-color: #BDBDBD;
+                margin-bottom: 1rem;
+    
+                color: #FFF;
+                font-family: var(--font-primary);
+                font-size: var(--paragraph-one);
+                font-weight: var(--semibold);
+            }
+        }
+    
+        .total__box{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #FFF;
+            // margin-bottom: 1rem;
+    
+            p{
+                color: var(--gray-600);
+                font-family: var(--font-primary);
+                font-size: var(--paragraph-two);
+                font-weight: var(--semibold);
+                line-height: 1.5rem;
+            }
+    
+            span{
+                color: var(--gray-300);
+                text-align: right;
+                font-family: var(--font-primary);
+                font-size: var(--paragraph-two);
+                font-weight: var(--semibold);
+                line-height: 1.5rem;
+            }
+        }
+    }    
+}
+

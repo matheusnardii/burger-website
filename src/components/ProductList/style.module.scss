@@ -1,0 +1,38 @@
+.products__container{
+    width: 90vw;
+    max-width: 85.5rem;
+    height: 46.5rem;
+
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: fit-content;
+
+    margin: 1.75rem auto;
+
+    flex-wrap: wrap;
+    height: fit-content;
+    /* gap: 3.5rem; */
+    margin: 1.75rem auto;
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(auto-fill, 300px);
+    row-gap: 52px;
+    
+}
+
+
+@media (min-width: 300px) and (max-width: 1024px){
+    .products__container{
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        // width: 38.75rem;
+        height: 22.5625rem;
+        gap: 1.25rem;
+        margin: 1rem 0 0 1rem;
+
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
